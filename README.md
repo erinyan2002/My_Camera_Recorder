@@ -8,6 +8,7 @@
 
 ![Camera_Recorder](https://github.com/user-attachments/assets/4a2c90d3-3e94-4d08-acfb-c38fa3b08ab5)
 
+![output](https://github.com/user-attachments/assets/ccfdca9d-6a72-4eab-9732-bb60d7d84e73)
 
 
 ## 🛠 주요 기능
@@ -51,3 +52,21 @@
 
 ```bash
 pip install opencv-python
+
+## OpenCV Video Recorder
+
+## 📌 프로젝트 소개
+이 프로젝트는 **OpenCV를 이용한 간단한 비디오 녹화 프로그램**입니다.  
+웹캠을 사용하여 비디오를 녹화하고, 다양한 **필터를 적용**할 수 있습니다.
+
+## 🏗 코드 설명
+이 프로젝트는 **OpenCV의 `cv2.VideoCapture` 와 `cv2.VideoWriter`** 를 이용하여 구현되었습니다.  
+다음은 주요 코드 흐름입니다:
+
+### 1️⃣ 웹캠 연결 및 설정
+```python
+cap = cv2.VideoCapture(0)  # 웹캠 연결
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)  # 해상도 설정
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+cap.set(cv2.CAP_PROP_FPS, 20)
+
